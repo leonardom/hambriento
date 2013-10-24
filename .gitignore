@@ -1,5 +1,9 @@
-va specific
 *.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
 
 #netbeans ignore personal stuff 
 nbproject/private/
@@ -13,4 +17,4 @@ nbproject/private/
 *.out
 
 ## persistence
-/*/persistence.xml
+*/**/persistence.xml
