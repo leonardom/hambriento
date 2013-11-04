@@ -2,6 +2,7 @@
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <c:import url="../layout/header.jsp"></c:import> 
+<c:import url="../layout/menu.jsp"></c:import>
     <div class="container">
         <br>
         <br>

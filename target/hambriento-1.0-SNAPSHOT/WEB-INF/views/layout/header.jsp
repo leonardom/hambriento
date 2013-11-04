@@ -12,4 +12,3 @@
 
 </head>
 <body>
-    <c:import url="../layout/menu.jsp"></c:import>
