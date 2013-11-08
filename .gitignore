@@ -1,5 +1,5 @@
 *.class
-
+.idea
 # Package Files #
 *.jar
 *.war
@@ -20,4 +20,5 @@ nbproject/private/
 ## persistence
 */**/persistence.xml
 =======
+
 >>>>>>> e68c00ae74b46ab303ce965be166599a4d6cccc7
