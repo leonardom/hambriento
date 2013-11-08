@@ -17,7 +17,7 @@
 
     <body>
     <!--nav-->
-    <c:url value="../../layout/header.jsp"></c:url>
+    <c:url value="../../layout/menu.jsp"></c:url>
     <!--End Nav-->
     <div class="hero-unit">
         <div class="container">
