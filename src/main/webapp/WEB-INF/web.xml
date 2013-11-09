@@ -19,6 +19,10 @@
         <servlet-name>CategoriaGrupoController</servlet-name>
         <servlet-class>br.edu.unifeob.hambriento.controllers.CategoriaGrupoController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProdutoController</servlet-name>
+        <servlet-class>br.edu.unifeob.hambriento.controllers.ProdutoController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
@@ -30,6 +34,10 @@
     <servlet-mapping>
         <servlet-name>CategoriaGrupoController</servlet-name>
         <url-pattern>/CategoriaGrupoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoController</servlet-name>
+        <url-pattern>/ProdutoController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
