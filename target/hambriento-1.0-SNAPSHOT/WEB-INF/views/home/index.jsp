@@ -10,6 +10,7 @@
     <title></title>
 </head>
 <body>
+    
  <c:import url="../layout/menu.jsp"></c:import>
 
         <div class="container page-wrap">
@@ -21,6 +22,7 @@
 
     <!--  footer -->
     <c:import url="../layout/footer.jsp"></c:import>
+   
     </body>
     </html>
            

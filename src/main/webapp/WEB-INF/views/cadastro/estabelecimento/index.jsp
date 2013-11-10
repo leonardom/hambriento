@@ -27,7 +27,7 @@
                         <li class="divider">
                     </ul>
 
-                    <label for="rzsocial">Razï¿½o Social</label>
+                    <label for="rzsocial">Razão Social</label>
                     <input type="text" id="rzsocial">
                     <label for="nomefantasia">Nome Fantasia</label>
                     <input type="text" id="nomefantasia">
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="span4">
-                    <h5 class="lead">Endereï¿½o</h5>
+                    <h5 class="lead">Endereço</h5>
                     <ul class="nav nav-list">
                         <li class="divider">
                     </ul>
