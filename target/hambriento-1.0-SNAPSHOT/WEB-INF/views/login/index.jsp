@@ -1,28 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<c:import url="../layout/header.jsp"></c:import> 
-<c:import url="../layout/menu.jsp"></c:import>
-    <div class="container">
-        <br>
-        <br>
-        <br>
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <c:import url="../layout/imports.jsp"></c:import>
+    <title></title>
+</head>
+<body>
+ <c:import url="../layout/menu.jsp"></c:import>
 
-        <div class="well" style="width: 350px; margin: 0 auto; padding-left: 60px;">
-            <form  method="post" action="${pageContext.request.contextPath}/LoginController">
-            <fieldset >
-                <legend>Identificação do Usuário</legend>
+        <div class="container">
+            <p class="lead">Login</p>
+		conteudo
+        </div>
+		
 
-                <label for="email">Email</label>
-                <input type="email" name="email" class="span4"/>
-
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" class="span4"/>                         
-                <br>
-                <input type="submit" value="Entrar" class="btn btn-primary"/>
-
-            </fieldset>        
-        </form>
-    </div>
-</div>
-<c:import url="../layout/footer.jsp"></c:import> 
+    <!--  footer -->
+    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
+      <div class="navbar-inner">
+          <div class="container">
+              <p class="navbar-text"></p>
+          </div>
+      </div>
+        </div>
+    </body>
+    </html>

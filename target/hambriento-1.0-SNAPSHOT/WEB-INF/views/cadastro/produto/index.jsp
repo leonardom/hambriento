@@ -1,11 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <c:import url="../../layout/imports.jsp"></c:import>
+    <title></title>
+</head>
+<body>
+ <c:import url="../../layout/menu.jsp"></c:import>
 
-<c:import url="../../layout/header.jsp"></c:import> 
-<c:import url="../../layout/menu.jsp"></c:import> 
-
-    <div class="container">
+        <div class="container">
         <br><br><br>
         <div class="span4">
             <form action="#" method="POST">
@@ -26,5 +33,16 @@
             </form>
         </div>
 
-    </div>
-<c:import url="../../layout/footer.jsp"></c:import>
+        </div>
+		
+
+    <!--  footer -->
+    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
+      <div class="navbar-inner">
+          <div class="container">
+              <p class="navbar-text"></p>
+          </div>
+      </div>
+        </div>
+    </body>
+    </html>

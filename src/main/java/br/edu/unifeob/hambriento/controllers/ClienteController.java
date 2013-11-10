@@ -9,6 +9,6 @@ public class ClienteController {
     
        @RequestMapping(value = {"/index", "/"})
     public String index() {
-        return "/cliente/index";
+        return "cadastro/cliente/index";
     }
 }
