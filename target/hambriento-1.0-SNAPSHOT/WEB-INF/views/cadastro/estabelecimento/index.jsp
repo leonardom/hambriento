@@ -85,7 +85,9 @@
 
     </div>
     </form>
-    </div>
+        </div>
+		
+
     <!--  footer -->
     <div class="navbar navbar-fixed-bottom nav" style="position: relative">
       <div class="navbar-inner">
