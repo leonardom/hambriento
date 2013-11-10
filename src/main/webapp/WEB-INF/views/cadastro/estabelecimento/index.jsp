@@ -9,10 +9,33 @@
     <c:import url="../../layout/imports.jsp"></c:import>
     <title></title>
 </head>
+ <style>
+        * {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  
+  
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  
+
+}
+
+
+    </style>
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
-    <div class="hero-unit">
-        <div class="container">
+ <div class="page-wrap">
+        <div class="container ">
             <p class="lead">Cadastro de Estabelecimento</p>
         </div>
 <form action="#" method="post">
@@ -85,16 +108,10 @@
 
     </div>
     </form>
-        </div>
+       </div>
 		
 
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+    <c:import url="../../layout/footer.jsp"></c:import>
     </body>
     </html>

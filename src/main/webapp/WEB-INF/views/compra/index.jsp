@@ -7,11 +7,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <c:import url="../layout/imports.jsp"></c:import>
+      
     <title></title>
 </head>
 <body>
  <c:import url="../layout/menu.jsp"></c:import>
-        <div class="container">
+        <div class="container page-wrap">
         <!-- Nav tabs -->
        <ul class="nav nav-pills">
             <li class="active"><a href="#tabConfirmaEstabelecimento" data-toggle="tab">Confirmar Estabelecimento</a></li>
@@ -42,13 +43,7 @@
         </div>
     </div>
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+ <c:import url="../layout/footer.jsp"></c:import>
     </body>
     </html>
 <script>

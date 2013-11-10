@@ -12,7 +12,7 @@
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
 
-        <div class="container">
+        <div class="container page-wrap">
         <br><br><br>
         <div class="span4">
             <form action="#" method="POST">
@@ -37,12 +37,6 @@
 		
 
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+ <c:import url="../../layout/footer.jsp"></c:import>
     </body>
     </html>
