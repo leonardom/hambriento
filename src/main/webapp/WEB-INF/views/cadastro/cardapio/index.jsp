@@ -12,7 +12,7 @@
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
 
-        <div class="container">
+        <div class="container page-wrap">
             <p class="lead">Cadastro de Cardapios</p>
 		conteudo
         </div>
