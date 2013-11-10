@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 
 <c:import url="../../layout/header.jsp"></c:import> 
+<body>
 <c:import url="../../layout/menu.jsp"></c:import> 
 
     <div class="container">
@@ -12,11 +13,11 @@
                 <h5 class="lead">Cadastro de Produto</h5>
                 <label for="codigo">Codigo</label>
                 <input type="text" id="codigo">
-                <label for="descricao">Descrição</label>
+                <label for="descricao">Descriï¿½ï¿½o</label>
                 <input type="text" id="descricao">
                 <label for="visivel">Categoria</label>
                 <select id="visivel">
-                    <option value="#">Selecione uma opção</option>
+                    <option value="#">Selecione uma opï¿½ï¿½o</option>
                 </select>
                 <div class="row-fluid">
                     <div class="span12">
