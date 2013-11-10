@@ -23,7 +23,7 @@
         <div class="container">
             <p class="lead">Cadastro de Estabelecimento</p>
         </div>
-
+<form action="#" method="post">
         <div class="container">
 
             <div class="row-fluid">
@@ -92,6 +92,7 @@
         </div>
 
     </div>
+    </form>
     <!-- include footer -->
     <c:import url="../../layout/footer.jsp"></c:import>
     </div>
