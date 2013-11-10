@@ -12,7 +12,7 @@
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
 
-        <div class="container">
+        <div class="container page-wrap">
         <br><br><br>
         <div class="span6">
             <form action="#" method="POST">
