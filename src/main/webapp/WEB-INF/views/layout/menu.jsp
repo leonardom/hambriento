@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar">
     <div class="navbar-inner">
         <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-th-list"></span></a>
@@ -8,7 +8,7 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Entrar</a></li>
                 </ul>
             </div>
         </div>
