@@ -17,7 +17,7 @@
 
     <body>
     <!--nav-->
-    <c:url value="../../layout/menu.jsp"></c:url>
+    <c:import url="../../layout/header.jsp"></c:import>
     <!--End Nav-->
     <div class="hero-unit">
         <div class="container">
@@ -93,7 +93,7 @@
 
     </div>
     <!-- include footer -->
-   <c:url value="../../layout/footer.jsp"></c:url>
+    <c:import url="../../layout/footer.jsp"></c:import>
     </div>
 
     </body>
