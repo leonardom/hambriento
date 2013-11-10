@@ -2,19 +2,7 @@
     <%@page contentType="text/html" pageEncoding="UTF-8"%>
             <!doctype html>
     <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <link href='<c:url value="../../../../css/bootstrap-responsive.min.css"/>' rel="stylesheet" >
-        <link href='<c:url value="../../../../css/bootstrap.min.css"/>' rel="stylesheet">
-        <link href='<c:url value="../../../../css/jqueryui/jquery-ui-1.10.2.custom.min.css"/>' rel="stylesheet">
-        <script src='<c:url value="../../../../js/bootstrap.min.js"/>' type="text/javascript"></script>
-        <script src='<c:url value="../../../../js/jquery.min.js"/>' type="text/javascript"></script>
-       
-             
-        <title>Cadastro</title>
-    </head>
-
+   <c:import url="../../layout/header.jsp"></c:import> 
     <body>
     <!--nav-->
     <c:import url="../../layout/header.jsp"></c:import>
