@@ -20,7 +20,7 @@
 		
 
     <!--  footer -->
-    <c:import url="../../layout/footer.jsp"></c:import>
+    <c:import url="../layout/footer.jsp"></c:import>
     </body>
     </html>
            

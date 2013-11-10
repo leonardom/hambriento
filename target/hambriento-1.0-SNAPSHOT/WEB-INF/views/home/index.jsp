@@ -12,7 +12,7 @@
 <body>
  <c:import url="../layout/menu.jsp"></c:import>
 
-        <div class="container">
+        <div class="container page-wrap">
             <p class="lead">Pagina Inicial</p>
 		 <a href="${pageContext.request.contextPath}/login/" id="entrar">Entrar</a>
             <a href="${pageContext.request.contextPath}/cadastro/inicial" id="entrar" >Cadastrar-se</a>
@@ -20,13 +20,7 @@
 		
 
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+    <c:import url="../layout/footer.jsp"></c:import>
     </body>
     </html>
            

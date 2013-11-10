@@ -9,29 +9,7 @@
     <c:import url="../../layout/imports.jsp"></c:import>
     <title></title>
 </head>
- <style>
-        * {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
-.page-wrap {
-  min-height: 100%;
-  
-  
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  
-
-}
-
-
-    </style>
+ 
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
  <div class="page-wrap">
@@ -49,7 +27,7 @@ html, body {
                         <li class="divider">
                     </ul>
 
-                    <label for="rzsocial">Razão Social</label>
+                    <label for="rzsocial">Razï¿½o Social</label>
                     <input type="text" id="rzsocial">
                     <label for="nomefantasia">Nome Fantasia</label>
                     <input type="text" id="nomefantasia">
@@ -72,7 +50,7 @@ html, body {
                 </div>
 
                 <div class="span4">
-                    <h5 class="lead">Endereço</h5>
+                    <h5 class="lead">Endereï¿½o</h5>
                     <ul class="nav nav-list">
                         <li class="divider">
                     </ul>
