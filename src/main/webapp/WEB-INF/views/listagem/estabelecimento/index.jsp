@@ -12,17 +12,12 @@
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
 
-        <div class="container">
-            <p class="lead">Litagem de Estabelecimentos</p>
+        <div class="container page-wrap">
+            <p class="lead">Listagem de Estabelecimentos</p>
             conteudo
         </div>
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+  <c:import url="../../layout/footer.jsp"></c:import>
+      
     </body>
     </html>

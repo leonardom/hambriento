@@ -9,10 +9,11 @@
     <c:import url="../../layout/imports.jsp"></c:import>
     <title></title>
 </head>
+ 
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
-    <div class="hero-unit">
-        <div class="container">
+ <div class="page-wrap">
+        <div class="container ">
             <p class="lead">Cadastro de Estabelecimento</p>
         </div>
 <form action="#" method="post">
@@ -26,7 +27,7 @@
                         <li class="divider">
                     </ul>
 
-                    <label for="rzsocial">Razão Social</label>
+                    <label for="rzsocial">Razï¿½o Social</label>
                     <input type="text" id="rzsocial">
                     <label for="nomefantasia">Nome Fantasia</label>
                     <input type="text" id="nomefantasia">
@@ -49,7 +50,7 @@
                 </div>
 
                 <div class="span4">
-                    <h5 class="lead">Endereço</h5>
+                    <h5 class="lead">Endereï¿½o</h5>
                     <ul class="nav nav-list">
                         <li class="divider">
                     </ul>
@@ -85,16 +86,10 @@
 
     </div>
     </form>
-        </div>
+       </div>
 		
 
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+    <c:import url="../../layout/footer.jsp"></c:import>
     </body>
     </html>

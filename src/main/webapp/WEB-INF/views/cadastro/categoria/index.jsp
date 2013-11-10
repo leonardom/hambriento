@@ -12,19 +12,19 @@
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
 
-        <div class="container">
+        <div class="container page-wrap">
         <br><br><br>
         <div class="span6">
             <form action="#" method="POST">
                 <h5 class="lead">Cadastro de Categoria de Grupo</h5>
                 <label for="codigo">Codigo</label>
                 <input type="text" id="codigo">
-                <label for="descricao">Descrição</label>
+                <label for="descricao">Descriï¿½ï¿½o</label>
                 <input type="text" id="descricao">
                 <label for="visivel">Visivel</label>
                 <select id="visivel">
                     <option value="S">Sim</option>
-                    <option value="N">Não</option>
+                    <option value="N">Nï¿½o</option>
                 </select>
                 <label for="file">Imagem:</label>
                 <input type="file" id="file" name="file">
@@ -41,13 +41,7 @@
 		
 
     <!--  footer -->
-    <div class="navbar navbar-fixed-bottom nav" style="position: relative">
-      <div class="navbar-inner">
-          <div class="container">
-              <p class="navbar-text"></p>
-          </div>
-      </div>
-        </div>
+    <c:import url="../../layout/footer.jsp"></c:import>
     </body>
     </html>
 
