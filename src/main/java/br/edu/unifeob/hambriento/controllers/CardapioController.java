@@ -9,6 +9,6 @@ public class CardapioController {
     
        @RequestMapping(value = {"/index", "/"})
     public String index() {
-        return "/cardapio/index";
+        return "cadastro/cardapio/index";
     }
 }
