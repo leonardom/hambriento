@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/cardapio")
 public class CardapioController {
     
-       @RequestMapping(value = {"/index", "/"})
-    public String index() {
+       @RequestMapping(value = {"/cadastrar", "/"})
+    public String cadastrar() {
         return "cadastro/cardapio/index";
     }
 }

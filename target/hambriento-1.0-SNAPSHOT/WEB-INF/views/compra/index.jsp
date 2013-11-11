@@ -1,11 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<c:import url="../layout/header.jsp"></c:import> 
-<c:import url="../layout/menu.jsp"></c:import>
-    <div class="container">
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <c:import url="../layout/imports.jsp"></c:import>
+      
+    <title></title>
+</head>
+<body>
+ <c:import url="../layout/menu.jsp"></c:import>
+        <div class="container page-wrap">
         <!-- Nav tabs -->
-        <ul class="nav nav-pills">
+       <ul class="nav nav-pills">
             <li class="active"><a href="#tabConfirmaEstabelecimento" data-toggle="tab">Confirmar Estabelecimento</a></li>
             <li><a href="#tabEscolherItensDoPedido" data-toggle="tab">Escolher Itens do Pedido</a></li>
             <li><a href="#tabConfirmarEnderecoEntrega" data-toggle="tab">Confirmar Endereço de Entrega</a></li>
@@ -33,7 +42,10 @@
             </div>
         </div>
     </div>
-<c:import url="../layout/footer.jsp"></c:import> 
+ <c:import url="../layout/footer.jsp"></c:import>
+
+    </body>
+    </html>
 <script>
     $(document).ready(function() {
         $('#confirmarEstabelecimento').load('confirmarEstabelecimento/');

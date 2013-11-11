@@ -11,12 +11,4 @@ public class CadastroController {
     public String inicial() {
         return "cadastro/cadastroInicial/index";
     }
-    @RequestMapping(value = {"/cliente", "/"})
-    public String cliente() {
-        return "cadastro/cliente";
-    }
-   @RequestMapping(value = {"/estabelecimento", "/"})
-    public String estabelecimento() {
-        return "cadastro/estabelecimento";
-    }
 }
