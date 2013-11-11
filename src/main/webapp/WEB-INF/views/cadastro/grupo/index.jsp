@@ -5,6 +5,10 @@
 <c:import url="../../layout/header.jsp"></c:import> 
 <c:import url="../../layout/menu.jsp"></c:import> 
 
+<script>
+   $('.fileinput').show();
+</script>
+
     <div class="container">
         <br><br><br>
         <div class="span4">
@@ -19,8 +23,12 @@
                     <option value="S">Sim</option>
                     <option value="N">Não</option>
                 </select>
-                <label for="file">Imagem:</label>
-                <input type="file" id="file" name="file">
+
+                <div class="fileinput fileinput-new" data-provides="fileinput">
+                    <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                    <span class="fileinput-filename"></span>
+                    <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                </div>
 
                 <div class="row-fluid">
                     <div class="span12">
@@ -31,7 +39,7 @@
         </div>
 
     </div>
-<c:import url="../../layout/footer.jsp"></c:import>
+<c:import url="../../layout/footer.jsp"></c:import>)
 
 
 
