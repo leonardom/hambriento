@@ -5,11 +5,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.core.GenericTypeResolver;
 
-/**
- *
- * @author Ivan
- * @param <T>
- */
+/*
+    
+@author Ivan Simionato
+
+*/
 public abstract class GenericDao<T> {
     
     @PersistenceContext
