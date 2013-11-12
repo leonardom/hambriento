@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/categoria")
 public class CategoriaGrupoController {
     
-       @RequestMapping(value = {"/cadastrar", "/"})
+    @RequestMapping("/cadastrar")
     public String cadastrar() {
         return "/cadastro/categoria/index";
     }
