@@ -13,17 +13,16 @@
  <c:import url="../../layout/menu.jsp"></c:import>
 
         <div class="container page-wrap">
-        <br><br><br>
         <div class="span4">
             <form action="#" method="POST">
                 <h5 class="lead">Cadastro de Produto</h5>
                 <label for="codigo">Codigo</label>
                 <input type="text" id="codigo">
-                <label for="descricao">Descriï¿½ï¿½o</label>
+                <label for="descricao">Descrição</label>
                 <input type="text" id="descricao">
                 <label for="visivel">Categoria</label>
                 <select id="visivel">
-                    <option value="#">Selecione uma opï¿½ï¿½o</option>
+                    <option value="#">Selecione uma opção</option>
                 </select>
                 <div class="row-fluid">
                     <div class="span12">
