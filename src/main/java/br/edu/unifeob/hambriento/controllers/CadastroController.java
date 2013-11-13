@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/cadastro")
 public class CadastroController {
     
-    @RequestMapping(value = {"/inicial", "/"})
+    @RequestMapping("/inicial")
     public String inicial() {
         return "cadastro/cadastroInicial/index";
     }
