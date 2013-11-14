@@ -3,26 +3,28 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <!doctype html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <c:import url="../layout/imports.jsp"></c:import>
-    <title></title>
-</head>
-<body>
-    
- <c:import url="../layout/menu.jsp"></c:import>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <c:import url="../layout/imports.jsp"></c:import>
+            <title></title>
+        </head>
+        <body>
 
-        <div class="container page-wrap">
-            <p class="lead">Pagina Inicial</p>
-		 <a href="${pageContext.request.contextPath}/login/" id="entrar">Entrar</a>
-            <a href="${pageContext.request.contextPath}/cadastro/inicial" id="entrar" >Cadastrar-se</a>
+        <c:import url="../layout/menu.jsp"></c:import>
+
+            <div class="container page-wrap">
+                <div class="container">
+                    <p class="lead">Bem vindo,<a class="" href="${pageContext.request.contextPath}/cadastro/inicial" id="entrar" >novo por aqui?</a></p>
+            </div>
+            <center>
+            <img class="" src="${pageContext.request.contextPath}/img/logo.jpg" alt="Logo" width="" height="">
+            </center>
         </div>
-		
 
-    <!--  footer -->
-    <c:import url="../layout/footer.jsp"></c:import>
-   
+
+        <!--  footer -->
+        <c:import url="../layout/footer.jsp"></c:import>
+
     </body>
-    </html>
-           
+</html>
