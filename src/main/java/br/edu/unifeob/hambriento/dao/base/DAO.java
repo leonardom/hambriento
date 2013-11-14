@@ -1,10 +1,7 @@
 package br.edu.unifeob.hambriento.dao.base;
 
-import java.util.Set;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 
 public abstract class DAO<T> {
     
