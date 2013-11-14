@@ -4,7 +4,7 @@
 
     <groupId>br.edu.unifeob</groupId>
     <artifactId>hambriento</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>war</packaging>
 
     <name>hambriento</name>
@@ -13,32 +13,8 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>codehaus</id>
-            <url>http://repository.codehaus.org/org/codehaus</url>
-            <snapshots>
-              <enabled>true</enabled>
-            </snapshots>
-            <releases>
-              <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
+    
     <dependencies>
-        <dependency>
-            <groupId>javax.sql</groupId>
-            <artifactId>jdbc-stdext</artifactId>
-            <version>2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>6.0</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -60,35 +36,9 @@
             <version>3.2.4.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.6.4</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>1.6.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate</artifactId>
-            <version>3.2.5.ga</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.transaction</groupId>
-            <artifactId>jta</artifactId>
-            <version>1.0.1B</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>ejb3-persistence</artifactId>
-            <version>1.0.1.GA</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>3.3.2.GA</version>
         </dependency>
         <dependency>
             <groupId>jstl</groupId>

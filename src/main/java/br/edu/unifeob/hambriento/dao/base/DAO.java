@@ -30,11 +30,6 @@ public abstract class DAO<T> {
     }
     
     public void list(Class<T> clazz){
-        CriteriaQuery<T> criteria = entityManager.getCriteriaBuilder().createQuery(clazz);
-        Root<T> root = criteria.from(clazz);
-        Set<Root<?>> list = criteria.select(root).getRoots();
-        
-        System.out.println(list);
         
     }
     
