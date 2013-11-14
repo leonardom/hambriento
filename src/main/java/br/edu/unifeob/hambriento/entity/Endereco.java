@@ -25,12 +25,12 @@ public class Endereco implements  Serializable{
     private Estabelecimento estabelecimento;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId() {
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -25,7 +25,7 @@ public class Cliente implements Serializable{
     private List<Telefone> telefones;
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Integer getId() {
         return id;
     }
@@ -83,7 +83,7 @@ public class Cliente implements Serializable{
         this.endereco = endereco;
     }
     
-    @OneToMany(mappedBy = "telefone", targetEntity = br.edu.unifeob.hambriento.entity.Estabelecimento.class)
+    @OneToMany(mappedBy = "cliente")
     public List<Telefone> getTelefones() {
         return telefones;
     }

@@ -5,17 +5,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "Telefones")
-public class Telefone implements Serializable{
-    
+public class Telefone implements Serializable {
+
     private Integer id;
     private String ddd;
     private String numero;
     private Estabelecimento estabelecimento;
+    private Cliente cliente;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -43,7 +44,7 @@ public class Telefone implements Serializable{
         this.numero = numero;
     }
 
-    @ManyToOne
+    @OneToOne
     public Estabelecimento getEstabelecimento() {
         return estabelecimento;
     }
@@ -52,4 +53,12 @@ public class Telefone implements Serializable{
         this.estabelecimento = estabelecimento;
     }
 
+    @OneToOne
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 }

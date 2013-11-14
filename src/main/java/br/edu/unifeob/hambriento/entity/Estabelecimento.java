@@ -20,7 +20,7 @@ public class Estabelecimento implements Serializable{
     private List<Telefone> telefones;
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Integer getId() {
         return id;
     }
@@ -46,7 +46,7 @@ public class Estabelecimento implements Serializable{
         this.endereco = endereco;
     }
     
-    @OneToMany(mappedBy = "telefone", targetEntity = Estabelecimento.class)
+    @OneToMany(mappedBy = "estabelecimento")
     public List<Telefone> getTelefones() {
         return telefones;
     }
