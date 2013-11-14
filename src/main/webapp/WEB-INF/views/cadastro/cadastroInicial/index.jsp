@@ -29,7 +29,7 @@
                 </div>
                 
                 <div style="float: left ; width: 50%">
-                    <form method="POST" action="$${pageContext.request.contextPath}/estabelecimento/cadastrar" id="formCadastroDeEstabelecimento">  
+                    <form method="POST" action="${pageContext.request.contextPath}/estabelecimento/cadastrar" id="formCadastroDeEstabelecimento">  
                     <p class="lead">Estabelecimento</p>
                     <div style="width: 70%" class="well well-large">
                         <label for="emailEstabelecimento">Email</label>

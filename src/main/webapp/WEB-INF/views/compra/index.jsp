@@ -7,12 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <c:import url="../layout/imports.jsp"></c:import>
-      
     <title></title>
 </head>
 <body>
  <c:import url="../layout/menu.jsp"></c:import>
-        <div class="container page-wrap">
+ <div class="container page-wrap" id="rootwizard">
         <!-- Nav tabs -->
        <ul class="nav nav-pills">
             <li class="active"><a href="#tabConfirmaEstabelecimento" data-toggle="tab">Confirmar Estabelecimento</a></li>
@@ -40,6 +39,15 @@
                 <div id="escolherFormaDePagamento">    
                 </div>
             </div>
+            
+            <div style="float: left ; width: 100%">
+                 <ul class="pager wizard">
+			<li class="previous first" style="display:none;"><a href="#">First</a></li>
+                        <li class="previous"><a href="#">Voltar</a></li>
+                        <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                        <li class="next"><a href="#">Continuar</a></li>
+		</ul>
+            </div>
         </div>
     </div>
  <c:import url="../layout/footer.jsp"></c:import>
@@ -52,6 +60,8 @@
         $('#escolherItensDoPedido').load('escolherItensDoPedido/');
         $('#confirmarEnderecoDeEntrega').load('confirmarEnderecoDeEntrega/');
         $('#escolherFormaDePagamento').load('escolherFormaDePagamento/');
+        
+        $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
     });
     
 </script>
