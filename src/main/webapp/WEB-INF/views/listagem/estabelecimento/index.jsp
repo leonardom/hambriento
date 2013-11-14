@@ -12,7 +12,7 @@
         <body>
         <c:import url="../../layout/menu.jsp"></c:import>
             <div class="container page-wrap">
-                <p class="lead">Listagem de Estabelecimentos</p>
+                <p class="lead">Estabelecimentos</p>
                 <div class="span3">
                     <h4>Busca</h4>
                     <div class="well sidebar-nav">

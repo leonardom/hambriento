@@ -11,4 +11,10 @@ public class CardapioController {
     public String cadastrar() {
         return "cadastro/cardapio/index";
     }
+
+   @RequestMapping("/listar")
+    public String listar() {
+        return "listagem/cardapio/index";
+    
+    }
 }

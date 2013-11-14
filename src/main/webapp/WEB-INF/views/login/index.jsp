@@ -53,6 +53,7 @@
                         <input type="checkbox" value="lembrar"> Lembrar
                     </label>
                     <button class="btn btn-large btn-primary" type="submit" id="logon" name="_eventId_logon" id="btnentrar">Entrar</button>
+                    <a class="btn btn-warning" href="${pageContext.request.contextPath}/cadastro/inicial" title="Cadastros">Cadastre-se</a>
                     <br/>
                     <br>
                     <div class="alert-error">

@@ -16,7 +16,7 @@
     <label>Nome</label>
     <label>Nome</label>
     <label>Nome</label>
-        <label>Nome</label>
+    <label>Nome</label>
     <label>Nome</label>
     <label>Nome</label>
     <label>Nome</label>
@@ -31,7 +31,7 @@
     <label>Nome</label>
     <label>Nome</label>
     <br><br>
-     <br><br>
-      <br><br>
-       <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 </div>

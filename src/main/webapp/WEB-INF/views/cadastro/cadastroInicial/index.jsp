@@ -15,7 +15,7 @@
             <div class="container page-wrap">
                
                 <div style="float: left; width: 50%">
-                    <form method="POST" action="${pageContext.request.contextPath}" id="formCadastroDeCliente">  
+                    <form method="POST" action="${pageContext.request.contextPath}/cliente/cadastrar" id="formCadastroDeCliente">  
                     <p class="lead">Cliente</p>
                     <div style="width: 70%" class="well well-large">   
                         <label for="emailCliente">Email</label>
@@ -23,13 +23,13 @@
 
                         <label for="cpfCliente">CPF</label>
                         <input type="text" id="cpfCliente" name="cpfCliente"  class="span3" required pattern=".{14,14}" />
-                        <input type="submit" name="btCadastrarCliente" id="btCadastrarCliente" value="Cadastrar" class="btn btn-primary "  />
+                       <button class="btn btn-primary" type="submit">Cadastrar</button>    
                         </div>
                    </form> 
                 </div>
                 
                 <div style="float: left ; width: 50%">
-                    <form method="POST" action="${pageContext.request.contextPath}" id="formCadastroDeEstabelecimento">  
+                    <form method="POST" action="$${pageContext.request.contextPath}/estabelecimento/cadastrar" id="formCadastroDeEstabelecimento">  
                     <p class="lead">Estabelecimento</p>
                     <div style="width: 70%" class="well well-large">
                         <label for="emailEstabelecimento">Email</label>
@@ -38,7 +38,7 @@
                         <label for="cnpjEstabelecimento">CNPJ</label>
                         <input type="text" id="cnpjEstabelecimento" name="cnpjEstabelecimento" class="span3" required pattern=".{18,18}"/>
                         
-                        <input type="submit" name="btCadastrarEstabelecimento" id="btCadastrarCliente" value="Cadastrar" class="btn btn-primary "/>
+                        <button class="btn btn-primary" type="submit">Cadastrar</button>    
                     </div>
                    </form> 
                 </div>
