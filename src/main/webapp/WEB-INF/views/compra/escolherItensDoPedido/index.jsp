@@ -2,7 +2,7 @@
          pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <div class="container">
-
+        
     <div style="float: left ; width: 50%">
         <label for="nomeEstabelecimento">Nome do Estabelecimento</label>
         <input type="text" id="nomeEstabelecimento" class="span5" readonly/>
