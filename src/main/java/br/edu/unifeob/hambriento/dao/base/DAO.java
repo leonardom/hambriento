@@ -1,6 +1,5 @@
 package br.edu.unifeob.hambriento.dao.base;
 
-import java.util.List;
 import java.util.Set;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
