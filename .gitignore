@@ -24,4 +24,4 @@ target
 
 
 ## persistence
-*/**/persistence.xml
+#*/**/persistence.xml
