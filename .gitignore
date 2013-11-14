@@ -17,5 +17,11 @@ nbproject/private/
 *.swp
 *.out
 
+##Maven
+target/*
+target
+
+
+
 ## persistence
 */**/persistence.xml
