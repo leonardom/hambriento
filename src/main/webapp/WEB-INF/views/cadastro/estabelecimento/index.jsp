@@ -16,7 +16,7 @@
                 <div class="container ">
                     <p class="lead">Cadastro de Estabelecimento</p>
                 </div>
-                <form action="#" method="post">
+                <form action="${pageContext.request.contextPath}/estabelecimento/salvar" method="post" class="well well-large">
                     <div class="container">
 
                         <div class="row-fluid">
@@ -39,8 +39,8 @@
                                 <label for="cnpj">CNPJ</label>
                                 <input type="text" id="cnpj">
                                 <label for="espestabelecimento">Especialidade do Estabelencimento</label>
-                                <select id="espestabelecimento">
-                                    <!-- foreach especialidade -->
+                                <select id="especialidade">
+                                    <option>Selecione</option>
                                     <option>Americana</option>
                                     <option>Chinesa</option>
                                     <option>Italiana</option>

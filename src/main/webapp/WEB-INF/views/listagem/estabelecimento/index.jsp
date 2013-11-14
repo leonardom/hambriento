@@ -11,10 +11,10 @@
         <body>
         <c:import url="../../layout/menu.jsp"></c:import>
             <div class="container page-wrap">
-                <p class="lead">Listagem de Estabelecimentos</p>
+                <p class="lead">Estabelecimentos</p>
                 <div class="span3">
                     <h4>Busca</h4>
-                    <div class="well sidebar-nav">
+                    <div class="sidebar-nav">
                         <form name="estabelecimento" method="post" action="listagem">
                             <label for="textfield">Estado</label>
                             <select class="input-small" name="estado" id="estado">
@@ -22,16 +22,21 @@
                                 <option value="RJ">RJ</option>
                             </select>
                             <input class="input-medium" type="text" name="cidade" id="cidade" placeholder="Cidade">
-                            <label>Especialidades</label>
-                            <label class="checkbox">
-                                <input type="checkbox" id="cb1" value="option1">
-                                1 </label>
-                            <label class="checkbox">
-                                <input type="checkbox" id="cb2" value="option2">
-                                2 </label>
-                            <label class="checkbox">
-                                <input type="checkbox" id="cb3" value="option3">
-                                3</label>
+                                 <select id="especialidade">
+                                    <!-- foreach especialidade -->
+                                    <option>Selecione</option>
+                                    <option>Americana</option>
+                                    <option>Chinesa</option>
+                                    <option>Italiana</option>
+                                    <option>Japonesa</option>
+                                    <option>Mexicana</option>
+                                    <option>Mineira</option>
+                                    <option>Nordestina</option>
+                                    <option>Paulista</option>
+
+
+                                </select> 
+                           
                             <input class="btn" type="submit" name="busca" id="busca" value="Buscar">
                         </form>
                     </div>

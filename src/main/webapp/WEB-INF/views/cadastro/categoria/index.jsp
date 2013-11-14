@@ -15,7 +15,7 @@
 
             <div class="container page-wrap">
                 <div class="span6">
-                    <form action="#" method="POST">
+                    <form action="#" method="POST" class="well well-large">
                         <h5 class="lead">Cadastro de Categoria de Grupo</h5>
                         <label for="codigo">Codigo</label>
                         <input type="text" id="codigo">
@@ -33,7 +33,7 @@
                             <div class="span12">
                                 <input type="button" id="btn" class="btn btn-primary" value="Salvar">
                             </div>
-                        </div
+                        </div>
                     </form>
                 </div>
 

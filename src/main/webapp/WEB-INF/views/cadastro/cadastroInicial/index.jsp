@@ -23,7 +23,7 @@
 
                         <label for="cpfCliente">CPF</label>
                         <input type="text" id="cpfCliente" name="cpfCliente"  class="span3" required pattern=".{14,14}" />
-                        <input type="submit" name="btCadastrarCliente" id="btCadastrarCliente" value="Cadastrar" class="btn btn-primary "  />
+                         <a class="btn btn-primary " href="${pageContext.request.contextPath}/cliente/cadastrar">Cadastrar</a> 
                         </div>
                    </form> 
                 </div>
@@ -38,7 +38,7 @@
                         <label for="cnpjEstabelecimento">CNPJ</label>
                         <input type="text" id="cnpjEstabelecimento" name="cnpjEstabelecimento" class="span3" required pattern=".{18,18}"/>
                         
-                        <input type="submit" name="btCadastrarEstabelecimento" id="btCadastrarCliente" value="Cadastrar" class="btn btn-primary "/>
+                        <a class="btn btn-primary " href="${pageContext.request.contextPath}/estabelecimento/cadastrar">Cadastrar</a> 
                     </div>
                    </form> 
                 </div>

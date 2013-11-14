@@ -11,9 +11,9 @@
 </head>
 <body>
  <c:import url="../../layout/menu.jsp"></c:import>
-        <div class="container page-wrap">
+        <div class="container page-wrap" 
             <p class="lead">Cadastro de Cliente</p>
-      <form action="${pageContext.request.contextPath}/cliente/salvar" method="post">
+      <form action="${pageContext.request.contextPath}/cliente/salvar" method="post" class="well well-large">
         <div class="container">
 
             <div class="row-fluid">
