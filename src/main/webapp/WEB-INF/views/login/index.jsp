@@ -53,6 +53,12 @@
                         <input type="checkbox" value="lembrar"> Lembrar
                     </label>
                     <button class="btn btn-large btn-primary" type="submit" id="logon" name="_eventId_logon" id="btnentrar">Entrar</button>
+                    <br/>
+                    <br>
+                    <div class="alert-error">
+                        ${msg}
+                    </div>
+                    
                 </form:form>
             </div>
 

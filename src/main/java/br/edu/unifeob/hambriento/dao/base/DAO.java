@@ -1,7 +1,10 @@
 package br.edu.unifeob.hambriento.dao.base;
 
+import java.util.List;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 public abstract class DAO<T> {
     
@@ -26,7 +29,16 @@ public abstract class DAO<T> {
         entityManager.getTransaction().commit();
     }
     
-    public void list(Class<T> clazz){
+    public List<T> list(Class<T> clazz){
+        
+        Query q = this.entityManager.createQuery("From "+clazz.getSimpleName());
+        
+        try {
+            return q.getResultList();
+        } catch (NoResultException e) {
+            return null;
+        }
+        
         
     }
     
