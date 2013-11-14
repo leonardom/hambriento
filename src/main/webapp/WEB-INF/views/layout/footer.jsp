@@ -1,6 +1,7 @@
-    <!-- footer -->
-        <div id="footer">
+<footer class="navbar site-footer nav">
+    <div class="navbar-inner">
         <div class="container">
-        <p class="muted credit">&copy ADS 2013</p>
-        </div>
-        </div>
+            <p class="navbar-text"></p>
+        </div> 
+    </div>
+</footer>
