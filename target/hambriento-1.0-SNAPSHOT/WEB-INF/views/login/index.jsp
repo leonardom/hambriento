@@ -45,12 +45,12 @@
 
                 <form class="form-signin well">
                     <h3 class="form-signin-heading">Por favor, entre </h3>
-                    <input type="text" class="input-block-level" placeholder="Email">
-                    <input type="password" class="input-block-level" placeholder="Senha">
+                    <input type="text" class="input-block-level" id="email" placeholder="Email">
+                    <input type="password" class="input-block-level" id="senha" placeholder="Senha">
                     <label class="checkbox">
                         <input type="checkbox" value="lembrar"> Lembrar
                     </label>
-                    <button class="btn btn-large btn-primary" type="submit">Entrar</button>
+                    <button class="btn btn-large btn-primary" type="submit" id="btnentrar">Entrar</button>
                 </form>
 
             </div>
