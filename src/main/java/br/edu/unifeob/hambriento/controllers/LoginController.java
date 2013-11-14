@@ -24,7 +24,11 @@ public class LoginController {
         
         login = loginDAO.validate(login);
         
-        System.out.println(login);
-        return "/login/index";
+        if(login != null){
+            return "redirect:/estabelecimento/listar";
+        }else{
+            model.addAttribute("msg", "Usuário e/ou Senha inválida!");
+            return "/login/index";
+        }
     }
 }

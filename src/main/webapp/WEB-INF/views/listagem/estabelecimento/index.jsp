@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!doctype html>
 <html>
     <head>
@@ -14,38 +15,32 @@
                 <p class="lead">Estabelecimentos</p>
                 <div class="span3">
                     <h4>Busca</h4>
-                    <div class="sidebar-nav">
-                        <form name="estabelecimento" method="post" action="listagem">
-                            <label for="textfield">Estado</label>
-                            <select class="input-small" name="estado" id="estado">
-                                <option value="SP">SP</option>
-                                <option value="RJ">RJ</option>
-                            </select>
-                            <input class="input-medium" type="text" name="cidade" id="cidade" placeholder="Cidade">
-                                 <select id="especialidade">
-                                    <!-- foreach especialidade -->
-                                    <option>Selecione</option>
-                                    <option>Americana</option>
-                                    <option>Chinesa</option>
-                                    <option>Italiana</option>
-                                    <option>Japonesa</option>
-                                    <option>Mexicana</option>
-                                    <option>Mineira</option>
-                                    <option>Nordestina</option>
-                                    <option>Paulista</option>
-
-
-                                </select> 
-                           
+                    <div class="well sidebar-nav">
+                        
+                        <form:form method="post" action="../estabelecimento/listar" modelAttribute="estabelecimento">
+                            
+                        <select class="input-medium" name="cidade" id="estado">
+                            <option value="">Selecione</option>
+                            <c:forEach items="${cidades}" var="cidade">
+                            <option value="${cidade}">${cidade}</option>
+                            </c:forEach>
+                        </select>
+                            <label>Especialidades</label>
+                            
+                        <c:forEach items="${especialidades}" var="especialidade">
+                            <label class="checkbox">
+                                <input type="checkbox" id="ch_${especialidade.id}" value="${especialidade.id}" name="especialidades">
+                                ${especialidade.descricao} </label>
+                        </c:forEach>
                             <input class="btn" type="submit" name="busca" id="busca" value="Buscar">
-                        </form>
+                        </form:form>
                     </div>
                     <!--/.well --> 
                 </div>
                 <div class="row padding">
                     <h4>Estabelecimentos</h4>
                     <table width="71%" class="table-hover">
-                    <c:forEach items="${estabelecimento}" var="estabelecimento">
+                    <c:forEach items="${estabelecimentos}" var="estabelecimento">
                         <tr>
                             <td><p>
 
@@ -53,11 +48,17 @@
                                 </p>
                                 <p>
 
-                                <h5>Endereço: </h5>${estabelecimento.endereco}
+                                <h5>Endereço: </h5>
+                                ${estabelecimento.endereco.logradouro} - ${estabelecimento.endereco.numero}<br/>
+                                ${estabelecimento.endereco.bairro} - ${estabelecimento.endereco.cidade}/ ${estabelecimento.endereco.estado}
                                 </p>
                                 <p>
 
-                                <h5>Especialidade: </h5>${estabelecimento.especialidade}
+                                <h5>Especialidades: </h5>
+                                <c:forEach items="${estabelecimento.especialidades}" var="especialidade">
+                                    ${especialidade.descricao}<br/>
+                                </c:forEach>
+   
                                 </p></td>
                         </tr>
                     </c:forEach>
