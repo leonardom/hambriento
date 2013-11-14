@@ -1,10 +1,10 @@
 *.class
-
+.idea/*
+*.iml
 # Package Files #
 *.jar
 *.war
 *.ear
-<<<<<<< HEAD
 
 #netbeans ignore personal stuff 
 nbproject/private/
@@ -19,5 +19,3 @@ nbproject/private/
 
 ## persistence
 */**/persistence.xml
-=======
->>>>>>> e68c00ae74b46ab303ce965be166599a4d6cccc7
