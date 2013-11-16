@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -18,9 +21,10 @@ public class Estabelecimento implements Serializable{
     private String nome;
     private Endereco endereco;
     private List<Telefone> telefones;
+    private List<Especialidade> especialidades;
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Integer getId() {
         return id;
     }
@@ -46,7 +50,7 @@ public class Estabelecimento implements Serializable{
         this.endereco = endereco;
     }
     
-    @OneToMany(mappedBy = "telefone", targetEntity = Estabelecimento.class)
+    @OneToMany(mappedBy = "estabelecimento")
     public List<Telefone> getTelefones() {
         return telefones;
     }
@@ -55,4 +59,15 @@ public class Estabelecimento implements Serializable{
         this.telefones = telefones;
     }
 
+    @ManyToMany
+    @JoinTable(name = "estabelecimento_especialidade", joinColumns = @JoinColumn(name = "estabelecimento_id"), inverseJoinColumns = @JoinColumn(name = "especialidade_id"))
+    public List<Especialidade> getEspecialidades() {
+        return especialidades;
+    }
+
+    public void setEspecialidades(List<Especialidade> especialidades) {
+        this.especialidades = especialidades;
+    }
+
+    
 }

@@ -14,6 +14,5 @@
         <label for="especialidadeDoEstabelecimento">Especialiade do Estabelecimento</label>
         <input type="text" id="especialidadeDoEstabelecimento" class="span5" readonly/>
         <br>
-        <button class="btn">Continuar</button>
     </div>
 

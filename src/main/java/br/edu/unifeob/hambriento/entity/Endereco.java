@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -22,15 +21,14 @@ public class Endereco implements  Serializable{
     private String estado;
     private Double latitude;
     private Double longitude;
-    private Estabelecimento estabelecimento;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId() {
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -104,14 +102,5 @@ public class Endereco implements  Serializable{
 
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
-    }
-
-    @OneToOne
-    public Estabelecimento getEstabelecimento() {
-        return estabelecimento;
-    }
-
-    public void setEstabelecimento(Estabelecimento estabelecimento) {
-        this.estabelecimento = estabelecimento;
     }
 }
